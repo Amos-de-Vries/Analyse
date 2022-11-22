@@ -1,0 +1,42 @@
+== SUC_Evaluatie bekijken
+Een student wilt zijn evaluatie bekijken die door een docent op de webapplicatie gezet zijn.
+
+=== Actors
+*Student*, docent
+
+=== Pre conditie
+De [underline]#student# heeft de opdracht gemaakt, en heeft hier een evaluatie voor gekregen
+
+=== Basis pad
+. De [underline]#student# will zijn evaluatie bekijken.
+. De [underline]#student# vraagt aan de docent van het specifieken vak om zijn evaluatie te bekijken
+. De [underline]#student# krijgt zijn evaluatie te zien van de [underline]#docent# .
+
+=== Post conditie
+ * De [underline]#student# heeft zijn evaluatie gezien gekregen.
+
+=== Alternatief A: stoppen
+. De [underline]#student# kiest ervoor om toch niet de evalutie te willen bekijken.
+. De use case eindigt.
+
+=== Post conditie
+ * De [underline]#student# heeft zijn evaluatie niet gezien.
+
+=== Alternatief B: De [underline]#student# vraagt om iemand anders evaluatie
+. De [underline]#student# vraagt om iemand anders zijn evaluatie.
+. De [underline]#docent# mag deze niet geven omdat deze niet bij deze [underline]#student# horen.
+. De use case eindigt.
+
+=== Post conditie
+* De [underline]#student# heeft de anderen [underline]#student#'s evaluatie niet gezien.
+
+=== Alternatief C: evaluatie niet beschikbaar.
+. De [underline]#docent# heeft de evaluatie nog niet beschikbbaar gemaakt.
+. De student krijgt niet zijn evaluaties te zien.
+. De use case eindigt.
+
+=== Post conditie
+* De [underline]#student# heeft zijn evaluatie niet gezien.
+
+=== Scenario basis pad
+Bob wilt zijn evaluatie bekijken, dus hij vraagt aan zijn wiskunde docent om zijn evaluatie te zien, de docent geeft hem zijn evaluatie.
