@@ -1,2 +1,6 @@
-# Analyse
- Analyse - HOGENT Programmeren
+# Analyse Groepsopdracht
+
+Opleiding: Hogent Programmeren
+
+Vak: Analyse
+
