@@ -1,11 +1,11 @@
-== BUC_SI-Studenteninschrijvingen
-De student wil zich inschrijven voor een academiejaar.Er wordt nagegaan of de student voeldoet aan alle studievereisten. +
+== BUC_SI-Student inschrijven
+De student wil zich inschrijven voor een academiejaar, opleidingsonderdeel of bepaald vak. Er wordt nagegaan of de student voeldoet aan alle studievereisten. +
 
 === Actors
 *Student*, Secretariaatmedewerker
 
 === Preconditie
-Geen
+Er is geen preconditie
 
 === Basis pad
 . De [.underline]#Student# wil zich inschrijven.
