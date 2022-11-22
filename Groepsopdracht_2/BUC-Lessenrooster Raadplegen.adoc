@@ -1,0 +1,61 @@
+== BUC_Lessenrooster Bekijken
+De student of docent wil zijn/haar planning voor de lessen van deze week of later raadplegen.
+
+=== Actors
+*student*, *docent*, *secretariaatmedewerker*.
+
+=== Preconditie
+Student / docent is geregistreerd bij desbetreffende schoolinstantie, weet niet welke les hij morgenvroeg heeft / geven.
+
+=== Basis pad
+1. De [.underline]#student# / [.underline]#docent# wil zijn lessenrooster raadplegen.
+2. De [.underline]#student# / [.underline]#docent# begeeft zich naar het secretariaat.
+3. De [.underline]#student# / [.underline]#docent# vraagt naar de secretariaatmedewerker.
+4. De [.underline]#student# / [.underline]#docent# vraagt aan de secretariaatmedewerker om zijn persoonlijk lessenrooster van de week.
+5. De [.underline]#secretariaatmedewerker# zoekt de lessenrooster van de desbetreffende [.underline]#student# / [.underline]#docent# op in het systeem.
+6. De [.underline]#secretariaatmedewerker# drukt de persoonlijke lessenrooster af voor de [.underline]#student# / [.underline]#docent#.
+7. De [.underline]#student# / [.underline]#docent# navigeert op de lessenrooster naar deesbetreffende dag en vak.
+8. De use case eindigd.
+
+=== Postconditie
+
+De [.underline]#student# / [.underline]#docent# weet nu waar hij morgenvroeg moet zijn en welke vak hij heeft of moet geven.
+
+=== Alternatief A: Het secretariaat is gesloten.
+[start=3]
+. De [.underline]#student# / [.underline]#docent# ziet dat het secratriaat gesloten is.
+. De use case eindigd.
+
+=== Alternatief B: secretariaatmedewerker drukte lessenrooster van verkeerde persoon af.
+[start=8]
+. De [.underline]#student# / [.underline]#docent# merkt dat dit niet de juiste lessenrooster is.
+. De Use case herhaalt het basis pad.
+
+=== Postconditie Alternatief A:
+De [.underline]#student# / [.underline]#docent# weet niet welk vak hij gaat krijgen / moet geven en ook niet waar hij moet zijn.
+
+=== Postconditie Alternatief B:
+Als het basispad succesvol wordt herhaalt gaat de [.underline]#student# / [.underline]#docent# zijn lessenrooster kunnen inkijken. Zoniet gaat
+[.underline]#student# / [.underline]#docent# weet niet welk vak hij gaat krijgen / moet geven en ook niet waar hij moet zijn.
+
+=== Scenario
+Dries Mertens wil weten welk vak hij morgenvroeg heeft, maar heeft zijn lessenrooster nog niet ontvangen.
+
+Dries begeeft zich naar het secretariaat en vraagt naar de secretariaatmedewerker Roberto die verantwoordelijk is voor de lessenroosters. Dries vraagt aan Roberto of het mogelijk is om zijn lessenrooster af te drukken voor hem. Roberto vraagt de voor en achternaam van Dries en zoekt hem op in het systeem. Na een 10-tal seconden vindt Roberto, Dries zijn lessenrooster en drukt hem af. Dries bedankt Roberto en kijkt welk vak hij morgen in de ochtend heeft.
+
+=== Domeinregels
+
+===== Beperkingen
+
+-  Een secretariaatmedewerker kan telkens maar 1 persoon opzoeken per keer.
+
+===== Afleidingsregels
+
+- Studenten uit dezelfde klas kunnen geen verschillende lessenrooster hebben.
+
+===== Gebeurtenisregels
+
+- Wanneer men zijn lessenrooster kwijt is, moet er een nieuwe aangevraagd worden op het secretariaat.
+
+=== Used case Diagram
+image::Diagram BUC-lessenrooster opvragen.jpg[]

@@ -1,0 +1,62 @@
+== BUC_SI-Studenteninschrijvingen
+De student wil zich inschrijven voor een academiejaar.Er wordt nagegaan of de student voeldoet aan alle studievereisten. +
+
+=== Actors
+*Student*, Secretariaatmedewerker
+
+=== Preconditie
+Geen
+
+=== Basis pad
+. De [.underline]#Student# wil zich inschrijven.
+. De [.underline]#Student# begeeft zich naar het secretariaat.
+. De [.underline]#Secretariaatmedewerker# vraagt de student zijn identiteitskaart en welke opleiding/vak hij wil volgen.
+. De [.underline]#Student# geeft zijn identiteitskaart en geeft aan welke opleiding/vak hij wil volgen.
+. De [.underline]#Secretariaatmedewerker# controleert de aantal toegelaten studenten voor deze opleidingof vak en kijkt de gegevens na.
+. De [.underline]#Secretariaatmedewerker# schrijft de student in.
+. De [.underline]#Secretariaatmedewerker# maakt een factuur op en geeft deze door aan de student.
+. De [.underline]#Student# betaald de factuur.
+. De use case eindigt.
+
+=== Postconditie
+De [.underline]#student# is ingeschreven voor zijn gekozen opleiding/vak
+
+=== Alternatief A: Stoppen
+1. De [.underline]#student# geeft aan dat hij toch niet wil doorgaan met de inschrijving.
+2. De [.underline]#Secretariaatmedewerker# stopt het proces en maakt al reeds geclompete stappen ongedaan.
+3. De Use Case eindigt.
+
+=== Alternatief B: Maximum aantal toegelaten studenten bereikt
+
+[start=3]
+. De [.underline]#student# geeft door welke opleiding/vak hij wil volgen.
+. De [.underline]#Secretariaatmedewerker# vertelt de student dat hij niet kan beginnen aan de studie omdat het maximum aantal toegelaten studenten al bereikt is.
+. De [.underline]#Secretariaatmedewerker# stopt het proces en maakt al reeds geclompete stappen ongedaan.
+. De Use Case eindigt.
+
+=== Postconditie Alternatief A en B:
+De Student kan niet ingeschreven worden.
+
+=== Scenario
+Kevin De Bruyne(Student) wil zich inschrijven en begeeft hij zich naar het secretariaat
+Karen(Secretariaatsmedewerker) vraagt aan Kevin zijn identiteitskaart voor het noteren van de gegevens
+en vraagt welke opleiding/vak hij wil gaan volgen. Kevin geeft zijn id aan Karen en zegt welke opleiding/vak hij wil volgen.
+Karen controleert of het maximum aantal studenten nog niet bereikt is en of de gegevens van Kevin correct zijn.
+Daarna schrijft Karen Kevin in en maakt ze een factuur op die Kevin betaald.
+
+=== Domeinregels
+
+===== Beperkingen
+. Alvorens een student zich kan inschrijven, moet hij in het bezit zijn van een secundair diploma en voldoen aan de vooraf opgestelde studievereisten.
+. Een secretariaatmedewerker kan tijdens het inschrijvingsproces maar 1 student per keer inschrijven.
+
+===== Afleidingsregels
+. Als een student niet voldoet aan de vooraf opgestelde studievereisten, kan deze zich niet inschrijven.
+. Een student is pas werkelijk ingeschreven na het betalen van het inschrijvingsgeld.
+
+===== Gebeurtenisregels
+. Wanneer de student zich bedenkt en hij zichzelf wil laten uitschrijven, zal de secretariaatmedewerker de procedure van uitschrijving moeten opstarten.
+. De student wil zich inschrijven dus zal de secretariaatmedewerker de gegevens van de student moeten ingeven.
+
+=== Use Case Diagram
+image::BUC_SI.png[]

@@ -1,0 +1,46 @@
+=== BUC_AO - Aanwezigheden opnemen
+
+De docent wilt opnemen wie er allemaal al dan niet aanwezig is in de les.
+
+=== Actors
+
+*docent*, student
+
+
+=== Preconditie
+
+Student is ingeschreven voor vak.
+
+
+=== Basis pad
+
+. De [underline]#docent# wil weten of alle studenten aanwezig zijn.
+
+. De [underline]#docent# heeft een aanwezigheidslijst gehaald bij het secretariaat.
+
+. De [underline]#docent# roept de namen af van de studenten.
+
+. De [underline]#student# is aanwezig.
+
+. De [underline]#docent# noteert de aanwezigheid van de student op de aanwezigheidslijst.
+
+. De use case eindigt.
+
+=== Post conditie
+
+De aanwezigheidslijst is ingevuld om te zien wie al dan niet aanwezig was.
+
+=== Alternatief A : Student afwezig
+
+[start=5]
+. De [underline]#student# is afwezig.
+
+. De [underline]#docent# noteert in de aanwezigheidslijst dat de student afwezig is.
+
+=== Scenario
+
+Dirk haalt de aanwezigheidslijst van bij het secretariaat. Dirk roept David De Jong af om te zien of hij aanwezig is. David roept 'Ja'. Dirk noteert in de aanwezigheidslijst dat David aanwezig is.
+
+=== Use case diagram
+
+image::BUC_AO.png[]

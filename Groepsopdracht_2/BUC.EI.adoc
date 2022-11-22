@@ -1,0 +1,31 @@
+== BUC_EI - Evaluatie Invullen
+De docent wil een evaluatie Invullen
+
+=== Actors
+*docent*,student
+
+=== Preconditie
+student heeft de module afgelegd
+
+=== Basis pad
+. De [.underline]#docent# controleert of de student alle opdrachten heeft gedaan voor de module.
+. De [.underline]#student# heeft alles gemaakt.
+. De [.underline]#docent# vult de evaluatie in.
+. De [.underline]#student# is wel of niet geslaagd.
+. De use case eindigt.
+
+=== Postconditie
+De student is wel of niet geslaagd
+
+=== Alternatief A: De student is uitgeschreven
+. De [.underline]#docent# controleert of de student alles heeft gedaan voor de module.
+. De [.underline]#docent# ziet dat de student niet meer ingeschreven is.
+. De [.underline]#docent# kan geen evaluatie invullen voor de student
+. De use case eindigt.
+
+=== Scenario
+Dirk (Leerkracht) kijkt na of Bart (Student) alle opdrachten heeft gedaan voor de module en ziet dat Bart alles heeft gedaan.
+Dirk noteert of Bart wel of niet is geslaagd voor de module.
+
+=== Use case diagram
+image::BUC_EI.png[]
