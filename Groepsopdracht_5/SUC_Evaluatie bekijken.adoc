@@ -1,2 +1,39 @@
-== SUC_Evaluatie bekijken
+= SUC_Evaluatie bekijken
 Een student wilt zijn evaluatie bekijken die door een docent op de webapplicatie gezet zijn.
+
+=== Actors
+*Student*, docent
+
+=== Pre conditie
+* De [underline]#docent# heeft de evaluatie in het system gezet.
+
+== Basis pad
+. De [underline]#student# will zijn evaluatie bekijken.
+. De [underline]#student# gaat naar het inlog portaal van de webapplicatie
+. De [underline]#student# moet inloggen met de gegevens die hij / zij door van de school heeft gekregen.
+. Het Systeem checked of deze inlog gegevens kloppen
+. de [underline]#student# navigeert naar de specifieken evaluatie en vraagt de gegevens op
+. Het Systeem checked of de evaluatie bestaat
+. Het Systeem toont de evaluatie
+
+=== Post conditie
+* De [underline]#student# heeft zijn evaluatie gezien gekregen.
+
+
+== Alternatief A: Verkeerde Inlog gegevens
+. Het Systeem kan niet de juiste inloggegevens vinden
+. Het Systeem geeft een bericht aan de [underline]#student# dat hij / zij het opnieuw moet proberen.
+. Het Systeem noteerd de foute poging
+. De use case eindigt.
+
+=== Post conditie
+* De [underline]#student# heeft zijn evaluatie niet gezien, en zal opnieuw moeten proberen om in te loggen.
+* De [underline]#student# heeft [1] kans minder om juist in te loggen.
+
+== Alternatief B: evaluatie niet beschikbaar.
+. Het Systeem kan de evaluatie voor de bijhorende opdracht niet vinden.
+. Het Systeem geeft een bericht dat aangeeft dat de evaluatie nog niet beschikbaar is.
+. De use case eindigt
+ 
+=== Post conditie
+* De [underline]#student# heeft zijn evaluatie niet gezien gekregen
