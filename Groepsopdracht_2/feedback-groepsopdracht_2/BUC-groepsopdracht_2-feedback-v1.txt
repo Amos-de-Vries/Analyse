@@ -1,0 +1,12 @@
+Feedback Groepsopdracht 2                                                                                                               aanwezigheden opnemen:
+-preconditie; moet ingeschreven zijn voor het vak niet in de school
+- basis pad moet specifieker zijn; leerkracht gaat aanwezigheidsformulier afhalen op het secretariaat.
+- Postconditite; aanwezigheidslijst met aanwezigen.
+
+evalutaie bekijken:
+- preconditie/basis pad, er is nog geen systeem. dit is al meer een system used case.
+
+studenteninschrijving:
+- preconditie; is een domeinregel. er is geen preconditie.
+- Basis pad; dieper uitleggen hoe hij zich identificieert. studievereisten benoemen. betaling toevoegen. Controleren van het aantal toegelate studenten.
+- Scenario is het doorlopen van het basis pad

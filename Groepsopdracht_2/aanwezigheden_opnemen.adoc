@@ -9,7 +9,7 @@ De docent wilt opnemen wie er allemaal al dan niet aanwezig is in de les.
 
 === Preconditie
 
-Student is ingeschreven voor vak.
+Er is een lijst opgemaakt met de studenten die aanwezig moeten zijn.
 
 
 === Basis pad
@@ -24,22 +24,34 @@ Student is ingeschreven voor vak.
 
 . De [underline]#docent# noteert de aanwezigheid van de student op de aanwezigheidslijst.
 
+. De [underline]#docent# heeft alle namen overlopen.
+
+. De [underline]#docent# brengt de aanwezigheidslijst terug naar het secretariaat. 
+
 . De use case eindigt.
 
 === Post conditie
 
-De aanwezigheidslijst is ingevuld om te zien wie al dan niet aanwezig was.
+De aanwezigheidslijst is ingevuld.
 
 === Alternatief A : Student afwezig
 
-[start=5]
+[start=4]
 . De [underline]#student# is afwezig.
 
 . De [underline]#docent# noteert in de aanwezigheidslijst dat de student afwezig is.
 
+. De use case eindigt.
+
 === Scenario
 
-Dirk haalt de aanwezigheidslijst van bij het secretariaat. Dirk roept David De Jong af om te zien of hij aanwezig is. David roept 'Ja'. Dirk noteert in de aanwezigheidslijst dat David aanwezig is.
+Het is vandaag 22 november 2022. Om 9u begint de les Analyse in het lokaal 2.047. De les wordt gegeven door docent Dirk. Dirk heeft de aanwezigheidslijst gehaald bij het secretariaat. Dirk neemt de aanwezigheden pas op om 9u15, wie daarna komt wordt niet meer gezien als aanwezig. Dirk roept student Nikolas De Jong af om te zien of hij al dan niet aanwezig is. Nikolas antwoordt 'aanwezig'. Dirk noteert dat Nikolas aanwezig is. Na de les brengt Dirk de aanwezigheidslijst terug naar het secretariaat. 
+
+=== Domeinregels
+
+===== Gebeurtenisregel
+
+- De aanwezigheid wordt opgenomen 15 minuten nadat de les is begonnen. 
 
 === Use case diagram
 
